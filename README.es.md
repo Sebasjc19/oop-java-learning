@@ -16,12 +16,12 @@ El objetivo no es solo mostrar la sintaxis, sino entender **por qué** existe ca
 
 ## Conceptos
 
-| # | Concepto | Paquete | Estado |
-|---|---|---|---|
+| # | Concepto | Paquete                                                                             | Estado       |
+|---|---|-------------------------------------------------------------------------------------|--------------|
 | a | Encapsulación | [`a_encapsulation`](src/main/java/io/github/sebasjc19/a_encapsulation/README.es.md) | ✅ Disponible |
-| b | Herencia | — | 🕒 Planeado |
-| c | Polimorfismo | — | 🕒 Planeado |
-| d | Abstracción | — | 🕒 Planeado |
+| b | Herencia | [`b_inheritance`](src/main/java/io/github/sebasjc19/b_inheritance/README.es.md)     | ✅ Disponible |
+| c | Polimorfismo | —                                                                                   | 🕒 Planeado  |
+| d | Abstracción | —                                                                                   | 🕒 Planeado  |
 
 El prefijo de letra (`a_`, `b_`, ...) indica el orden de lectura sugerido.
 

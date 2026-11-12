@@ -16,12 +16,12 @@ The goal isn't just to show syntax, but to understand **why** each concept exist
 
 ## Concepts
 
-| # | Concept | Package | Status |
-|---|---|---|---|
-| a | Encapsulation | [`a_encapsulation`](src/main/java/io/github/sebasjc19/a_encapsulation/README.md) | ✅ Available |
-| b | Inheritance | — | 🕒 Planned |
-| c | Polymorphism | — | 🕒 Planned |
-| d | Abstraction | — | 🕒 Planned |
+| # | Concept | Package | Status              |
+|---|---|-|---------------------|
+| a | Encapsulation | [`a_encapsulation`](src/main/java/io/github/sebasjc19/a_encapsulation/README.md) | ✅ Available         |
+| b | Inheritance | [`b_inheritance`](src/main/java/io/github/sebasjc19/b_inheritance/README.md) | ✅ Available |
+| c | Polymorphism | — | 🕒 Planned          |
+| d | Abstraction | — | 🕒 Planned          |
 
 The letter prefix (`a_`, `b_`, ...) shows the suggested reading order.
 
