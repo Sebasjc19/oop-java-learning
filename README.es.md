@@ -20,7 +20,7 @@ El objetivo no es solo mostrar la sintaxis, sino entender **por qué** existe ca
 |---|---|-------------------------------------------------------------------------------------|--------------|
 | a | Encapsulación | [`a_encapsulation`](src/main/java/io/github/sebasjc19/a_encapsulation/README.es.md) | ✅ Disponible |
 | b | Herencia | [`b_inheritance`](src/main/java/io/github/sebasjc19/b_inheritance/README.es.md)     | ✅ Disponible |
-| c | Polimorfismo | —                                                                                   | 🕒 Planeado  |
+| c | Polimorfismo | [`c_polymorphism`](src/main/java/io/github/sebasjc19/c_polymorphism/README.es.md)   | ✅ Disponible |
 | d | Abstracción | —                                                                                   | 🕒 Planeado  |
 
 El prefijo de letra (`a_`, `b_`, ...) indica el orden de lectura sugerido.

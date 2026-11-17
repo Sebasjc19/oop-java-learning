@@ -20,7 +20,7 @@ The goal isn't just to show syntax, but to understand **why** each concept exist
 |---|---|-|---------------------|
 | a | Encapsulation | [`a_encapsulation`](src/main/java/io/github/sebasjc19/a_encapsulation/README.md) | ✅ Available         |
 | b | Inheritance | [`b_inheritance`](src/main/java/io/github/sebasjc19/b_inheritance/README.md) | ✅ Available |
-| c | Polymorphism | — | 🕒 Planned          |
+| c | Polymorphism | [`c_polymorphism`](src/main/java/io/github/sebasjc19/c_polymorphism/README.md) | ✅ Available |
 | d | Abstraction | — | 🕒 Planned          |
 
 The letter prefix (`a_`, `b_`, ...) shows the suggested reading order.
