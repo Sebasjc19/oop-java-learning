@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Payment {
 
     public String process(BigDecimal amount){
-        throw new RuntimeException("Method not valid");
+        return "Generic payment: " + amount;
     }
 
     public static String checkout(Payment payment, BigDecimal total){

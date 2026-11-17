@@ -9,42 +9,49 @@ public class PolymorphismTest {
     @Test
     void cardPayment(){
         Payment payment = new CardPayment();
-        assertTrue(
-                payment.process(new BigDecimal("3100")).contains("Card:")
+        assertEquals(
+                "Card: 3100",
+                payment.process(new BigDecimal("3100"))
         );
     }
 
     @Test
     void cardRefund(){
-        CardPayment payment = new CardPayment();
-        CardPayment cardPayment = payment;
-        assertTrue(
-                cardPayment.refundToCard(new BigDecimal("3100")).contains("Refund")
-        );
+        Payment payment = new CardPayment();
+        if (payment instanceof CardPayment card){
+            assertEquals(
+                    "Refund to card: 3100",
+                    card.refundToCard(new BigDecimal("3100"))
+            );
+        } else {
+            fail("Expected a CardPayment");
+        }
     }
 
     @Test
     void paypalPayment(){
         Payment payment = new PaypalPayment();
-        assertTrue(
-                payment.process(new BigDecimal("5000")).contains("Paypal:")
+        assertEquals(
+                "Paypal: 5000",
+                payment.process(new BigDecimal("5000"))
         );
     }
 
     @Test
-    void paymentError(){
+    void genericPayment(){
         Payment payment = new Payment();
-        assertThrows(Exception.class,
-                () -> payment.process(new BigDecimal("9000"))
+        assertEquals(
+                "Generic payment: 500",
+                payment.process(new BigDecimal("500"))
         );
     }
 
     @Test
     void checkoutPayment(){
         Payment payment = new PaypalPayment();
-
-        assertTrue(
-                Payment.checkout(payment,new BigDecimal("3200")).contains("Paypal:")
+        assertEquals(
+                "Paypal: 3200",
+                Payment.checkout(payment,new BigDecimal("3200"))
         );
     }
 }

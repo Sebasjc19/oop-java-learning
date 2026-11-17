@@ -6,11 +6,11 @@ public class CardPayment extends Payment{
 
     @Override
     public String process(BigDecimal amount) {
-        return "Card: "+amount;
+        return "Card: " + amount;
     }
 
     public String refundToCard(BigDecimal amount){
-        return "Refund to card: "+amount;
+        return "Refund to card: " + amount;
     }
 
 }

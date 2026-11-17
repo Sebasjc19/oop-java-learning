@@ -6,7 +6,7 @@ public class PaypalPayment extends Payment{
 
     @Override
     public String process(BigDecimal amount) {
-        return "Paypal: "+amount;
+        return "Paypal: " + amount;
     }
-    
+
 }
