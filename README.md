@@ -21,7 +21,7 @@ The goal isn't just to show syntax, but to understand **why** each concept exist
 | a | Encapsulation | [`a_encapsulation`](src/main/java/io/github/sebasjc19/a_encapsulation/README.md) | ✅ Available         |
 | b | Inheritance | [`b_inheritance`](src/main/java/io/github/sebasjc19/b_inheritance/README.md) | ✅ Available |
 | c | Polymorphism | [`c_polymorphism`](src/main/java/io/github/sebasjc19/c_polymorphism/README.md) | ✅ Available |
-| d | Abstraction | — | 🕒 Planned          |
+| d | Abstraction | [`d_abstraction`](src/main/java/io/github/sebasjc19/d_abstraction/README.md) | ✅ Available |
 
 The letter prefix (`a_`, `b_`, ...) shows the suggested reading order.
 
@@ -29,10 +29,16 @@ The letter prefix (`a_`, `b_`, ...) shows the suggested reading order.
 
 ```
 src/
-├── main/java/io/github/sebasjc19/
-│   └── a_encapsulation/        # Example + README for each concept
-└── test/java/io/github/sebasjc19/
-    └── a_encapsulation/        # Unit tests for each concept
+├── main/java/io/github/sebasjc19/   # Example + README for each concept
+│   ├── a_encapsulation/
+│   ├── b_inheritance/
+│   ├── c_polymorphism/
+│   └── d_abstraction/
+└── test/java/io/github/sebasjc19/   # Unit tests for each concept
+    ├── a_encapsulation/
+    ├── b_inheritance/
+    ├── c_polymorphism/
+    └── d_abstraction/
 ```
 
 ## Requirements
