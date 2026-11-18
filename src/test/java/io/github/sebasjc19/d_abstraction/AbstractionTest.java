@@ -49,4 +49,26 @@ public class AbstractionTest {
         Shipment shipment = new StandardShipment("CO-001", new BigDecimal("1.333"));
         assertEquals(new BigDecimal("9.00"), shipment.getCost());
     }
+
+    @Test
+    void summaryTest(){
+        Shipment shipment = new StandardShipment("CO-001", new BigDecimal("10"));
+        assertEquals("CO-001 | 10 kg | Cost: 35.00", shipment.summary());
+    }
+
+    @Test
+    void internationalValidationsTest(){
+        assertAll(
+                () -> assertThrows(Exception.class,
+                        () -> new InternationalShipment("CO-001", new BigDecimal("10"), "co")),
+                () -> assertThrows(Exception.class,
+                        () -> new InternationalShipment("CO-001", new BigDecimal("10"), "")),
+                () -> assertThrows(Exception.class,
+                        () -> new InternationalShipment("CO-001", new BigDecimal("10"), null)),
+                () -> assertThrows(Exception.class,
+                        () -> new InternationalShipment("CO-001", new BigDecimal("10"), "USA")),
+                () -> assertThrows(Exception.class,
+                        () -> new InternationalShipment("CO-001", new BigDecimal("10"), "C"))
+        );
+    }
 }
